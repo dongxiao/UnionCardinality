@@ -98,7 +98,7 @@ for i in range(m):
 	t_1[i] = (pow(key.y, rand_k, key.p)*bit)%key.p
 print("Bloom filter encryption time: {0:.4f} (seconds)".format(time.process_time() - t))
 
-print("\nLet us take a look at the first ten Bloom filter bits before and after encryption")
+print("\nLet us take a look at the first 10 Bloom filter bits before and after encryption")
 print("\nBefore\tAfter")
 for i in range(10):
 	print(str(int(bf1[i]))+"\t"+str(r_1[i])+" "+str(t_1[i]))
