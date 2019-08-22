@@ -18,15 +18,15 @@ from Crypto.PublicKey import ElGamal
 
 
 # private_set:	Contains the supposedly private information that needs to be kept inside the institution boundaries,
-#				here we use two synthetic data set institution1.txt and institution2.txt that contains
-#				pseudo individual identifiers.
+#		here we use two synthetic data set institution1.txt and institution2.txt that contains
+#		pseudo individual identifiers.
 #
 # hex_digits:	The hexdecimal digits are taken from the SHA512 and used as the Bloom filter hash functions. Each hexdecimal
-#				digit corresponds to 4 bits. For example, hex_digits of 5 makes the hash function domain 2^20
+#		digit corresponds to 4 bits. For example, hex_digits of 5 makes the hash function domain 2^20
 #				
-# m:			Size of the Bloom filter, this value is the same as the domain for the hash functions, such as 2^20 above
+# m:		Size of the Bloom filter, this value is the same as the domain for the hash functions, such as 2^20 above
 #
-# m:			The number of hash functions. 
+# m:		The number of hash functions. 
 #
 # random_salt:	This enables generating SHA512 outputs that are different from plain SHA512
 
@@ -141,4 +141,3 @@ print("We have discovered the number of zero bits in bf1 union bf2: "+str(bf1uni
 estimated_size = (-math.log(bf1unionbf2_zero_bits/m) * m)/k # Equation (4) in the paper
 print("Estimated Joint Cohort Size is: {0:.2f}".format(estimated_size))
 print("Joint Cohort Discovery Phase II Completes Now.")
-
