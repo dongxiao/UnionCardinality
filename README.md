@@ -19,8 +19,8 @@ k: the number of hash functions used in the Bloom filter, default to 30.
 random_salt: this gives different salt to the SHA512.  
 To vary the simulations, try different values of "randomvalue", "random value", "random  value", "random   value". Using fixed k and m, these simulation produce estimation results at a certain accuracy level.
 
-# Run Simulation
-$ cd DownloadDirectory
+# Run Simulation  
+$ cd DownloadDirectory  
 $ python PhaseTwoSimulation.py  
 The estimated union cardinality is printed in the end, compare the estimated value with true value 3000.
 
