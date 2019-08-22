@@ -26,7 +26,7 @@ from Crypto.PublicKey import ElGamal
 #				
 # m:		Size of the Bloom filter, this value is the same as the domain for the hash functions, such as 2^20 above
 #
-# m:		The number of hash functions. 
+# k:		The number of hash functions. 
 #
 # random_salt:	This enables generating SHA512 outputs that are different from plain SHA512
 
