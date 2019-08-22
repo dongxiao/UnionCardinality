@@ -60,7 +60,7 @@ print("\n***********************************************************")
 print("Network hub disseminates common Bloom filter parameters")
 print("***********************************************************")
 hex_digits = 4 
-random_salt = "randomvalue" 
+random_salt = "randomvalue" # to vary the simulations try different salt "randomvalue", "random value", "random  value", "random   value". 
 m = 2**(hex_digits*4) 
 k = 30 
 print("Bloom filter has " + str(m) + " bits")
