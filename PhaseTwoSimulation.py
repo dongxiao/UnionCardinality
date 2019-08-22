@@ -59,8 +59,8 @@ print("Institution 2 approves")
 print("\n***********************************************************")
 print("Network hub disseminates common Bloom filter parameters")
 print("***********************************************************")
-hex_digits = 4 
-random_salt = "randomvalue" # to vary the simulations try different salt "randomvalue", "random value", "random  value", "random   value". 
+hex_digits = 4 # hex_digits = 5 gives 2^20 bits in the Bloom filter, and higher estimation accuracy.
+random_salt = "randomvalue" # to vary the simulations try different salt "randomvalue", "random value", "random   value". 
 m = 2**(hex_digits*4) 
 k = 30 
 print("Bloom filter has " + str(m) + " bits")
