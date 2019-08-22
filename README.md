@@ -11,17 +11,17 @@ $ pip install hashlib
 $ pip install pycryptodome  
 
 # Parameter Tweaks
-m: size of the Bloom filter and default to 2^16. 
+m: size of the Bloom filter and default to 2^16.  
 Bigger Bloom filter makes the estimation more accurate. Try to compare the estimation accuracy between 2^16 and 2^20 Bloom filter. To change to 2^20, change the hex_digits to 5. As we indicated in Figure 1, when k = 30, m = 2^16 this gives an average abosulte error around 10. When k = 30, m = 2^20 gives an average abosulte error less than 2.
 
-k: the number of hash functions used in the Bloom filter, default to 30.
+k: the number of hash functions used in the Bloom filter, default to 30.  
 
-random_salt: this gives different salt to the SHA512. 
+random_salt: this gives different salt to the SHA512.  
 To vary the simulations, try different values of "randomvalue", "random value", "random  value", "random   value". Using fixed k and m, these simulation produce estimation results at a certain accuracy level.
 
 # Run Simulation
 $ cd DownloadDirectory
-$ python PhaseTwoSimulation.py
+$ python PhaseTwoSimulation.py  
 The estimated union cardinality is printed in the end, compare the estimated value with true value 3000.
 
 # References  
