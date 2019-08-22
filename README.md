@@ -12,7 +12,7 @@ $ pip install pycryptodome
 
 # Parameter Tweaks
 m: size of the Bloom filter and default to 2^16.  
-Bigger Bloom filter makes the estimation more accurate. Try to compare the estimation accuracy between 2^16 and 2^20 Bloom filter. To change to 2^20, change the hex_digits to 5. As we indicated in Figure 1, when k = 30, m = 2^16 this gives an average abosulte error around 10. When k = 30, m = 2^20 gives an average abosulte error less than 2.
+Bigger Bloom filter makes the estimation more accurate. Try to compare the estimation accuracy between 2^16 and 2^20 Bloom filters. To change to 2^20, change the hex_digits to 5. As we indicated in Figure 1, when k = 30, m = 2^16 this gives an average abosulte error around 10. When k = 30, m = 2^20 gives an average abosulte error less than 2.
 
 k: the number of hash functions used in the Bloom filter, default to 30.  
 
