@@ -20,7 +20,7 @@ random_salt: salt value to add to the SHA-512 hash.
 To vary the simulations, try different values such as "randomvalue", "random value", "random  value", "random   value". Using fixed k and m, these simulations produce estimation results at a certain accuracy level.
 
 # Run Simulation  
-$ cd DownloadDirectory  
+$ cd UnionCardinality  
 $ python PhaseTwoSimulation.py  
 The estimated union cardinality is printed in the end. Compare the estimated value with true value of 3000.
 
