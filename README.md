@@ -17,7 +17,7 @@ Bigger Bloom filter makes the estimation more accurate. Try to compare the estim
 k: the number of hash functions used in the Bloom filter, default to 30.  
 
 random_salt: salt value to add to the SHA-512 hash.  
-To vary the simulations, try different values such as "randomvalue", "random value", "random  value", "random   value". Using fixed k and m, these simulations produce estimation results at a certain accuracy level.
+To vary the simulations, try different values such as "randomvalue", "random value", "random   value". Using fixed k and m, these simulations produce estimation results at a certain accuracy level.
 
 # Run Simulation  
 $ cd UnionCardinality  
