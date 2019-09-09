@@ -128,7 +128,7 @@ bf1_zeros = int(m - sum(bf1))
 bf1unionbf2_zeros = 0 
 
 t = time.process_time()
-dec_r = pow(r_2, key.p-1-key.x, key.p) # r^-dA 
+dec_r = pow(r_2, key.p-1-key.x, key.p) # r^-x = r^p-1-x based on Fermat's little theorem as r^p-1 = 1 mod p
 
 # The possible range of bf1unionbf2_zeros is [0, bf1_zeros]
 # The group order for the ElGamal key is much larger than m, this ensures the answer is both correct and unique
