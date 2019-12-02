@@ -1,5 +1,5 @@
 # UnionCardinality
-This repo contains a demo program for the paper submission to 2020 AMIA Informatics Summit, entitled "Toward a More Accurate Accrual for Clinical Trials: Joint Cohort Discovery Using Bloom Filters and Homomorphic Encryption". 
+This repo contains a demo program for the paper accepted in 2020 AMIA Informatics Summit, entitled "Toward a More Accurate Accrual for Clinical Trials: Joint Cohort Discovery Using Bloom Filters and Homomorphic Encryption". 
 
 To run this demo, download the Python script PhaseTwoSimulation.py and two synthetic data files institution1.txt and institution2.txt. There are 1800 and 1500 pseudo-identifiers in each synthetic data file. They constitute the subjects for the two private sets. These two private sets also have 300 pseudo-identifiers in common, which makes union cardinality 3000 (1800 + 1500 - 300).
 
