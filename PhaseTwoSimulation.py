@@ -1,6 +1,6 @@
-# The following python program is prepared as a demo for the AMIA 2020 Informatics Summit paper Submission
+# The following python program is prepared as a demo for the AMIA 2020 Informatics Summit paper
 # entitled "Toward a More Accurate Accrual for Clinical Trials: Joint Cohort Discovery Using Bloom Filters 
-# and Homomorphic Encryption". The ElGamal protocol is currently implemented in discrete log mode.
+# and Homomorphic Encryption". The ElGamal protocol is currently implemented in modular arithmetic mode.
 # 
 # This program is for demo purpose only, do not modify and use it in the production system. We choose the 256 bit
 # key only and in practice use at least 2048 bit 
