@@ -31,7 +31,7 @@ https://github.com/lubux/ecelgamal
 To set up this example, first follow the installation instruction provided in the github project above. After the installation completes, add the java program for 27K test case into  
 ~/ecelgamal/ecelgamal/src/test/java/ECElGamalTest.java.
 
-Place the two Bloomfilter files bf1_ones.csv and bf1_ones.csv into the ~/ecelgamal/ecelgamal/ These two Bloom filters are prepared using the optimized parameters as defined in the AMIA paper: m = 2^23, k = 45. Such parameter setting results in 648533 and 848822 number of one bits in the two Bloom filters. 
+Place the two Bloomfilter files bf1_ones.csv and bf1_ones.csv into the ~/ecelgamal/ecelgamal/ These two Bloom filters are prepared using the synthetic dataset and optimized parameters as defined in the AMIA paper: m = 2^23, k = 45. Such parameter setting results in 648533 and 848822 number of one bits in the two Bloom filters. 
 
 Run the following command to test  
 ~/ecelgamal/ecelgamal$ mvn package
