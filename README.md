@@ -26,14 +26,15 @@ The estimated union cardinality is printed in the end. Compare the estimated val
 
 # Run 27K Example  
 We also made the java program and the data set we used for the 27K example available here. The implementation uses the following elliptic curve based implementation for additive homomorphic Elgamal system.
-
 https://github.com/lubux/ecelgamal
 
-To set up this example, first follow the installation instruction provided in the github project above. After the installation completes, add the java program for 27K test case into ~/ecelgamal/ecelgamal/src/test/java/ECElGamalTest.java.
+To set up this example, first follow the installation instruction provided in the github project above. After the installation completes, add the java program for 27K test case into 
+~/ecelgamal/ecelgamal/src/test/java/ECElGamalTest.java.
 
 Place the two Bloomfilter files bf1_ones.csv and bf1_ones.csv into the ~/ecelgamal/ecelgamal/ These two Bloom filters are prepared using the optimized parameters as defined in the AMIA paper: m = 2^23, k = 45. Such parameter setting results in 648533 and 848822 number of one bits in the two Bloom filters. 
 
 Run the following command to test
+
 ~/ecelgamal/ecelgamal$ mvn package
 
 In our experiment conducted on a system with Intel i7-8750H 2.2GHz CPU and 16GB Memory, the first encryption step took 2966972.36 ms, the second homomorphic additive encryptopn step took 1588887.95 ms, the third and final decryption step took 6.24 ms. The number of zero bits in the projected union of the two private Bloom filter is 7257294, this leads to an estimation of 27005.27 as the union cardinality for the two private sets.
